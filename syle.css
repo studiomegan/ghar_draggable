@@ -69,10 +69,10 @@ h1 {
     grid-template-columns: repeat(10, 9%);
     grid-template-rows: repeat(8, 11%);
     grid-column-gap: 1%;
-    height: 100vh;
+    height: 90%;
     width: 50vw;
     position: absolute;
-    top: 0;
+    top: 5vh;
     left: 50vw;
     background-color: transparent;
     display: grid;
