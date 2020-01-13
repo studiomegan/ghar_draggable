@@ -67,7 +67,7 @@ h1 {
 
 .wrapper.dropzones{
     grid-template-columns: repeat(10, 9%);
-    grid-template-rows: repeat(8, 11%);
+    grid-template-rows: repeat(8, auto);
     grid-column-gap: 1%;
     height: 90%;
     width: 50vw;
