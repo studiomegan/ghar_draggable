@@ -26,6 +26,10 @@
 body {
 	margin: 0;
 	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	overflow: hidden;
 }
 
 h1 {
@@ -84,7 +88,7 @@ h1 {
 }
 
 .wrapper.dropzones .dropzone {
-	background-color: red;
+	background-color: darkred;
 }
 
 .dropzone-1 {
@@ -218,10 +222,6 @@ button,html,input,optgroup,select,textarea{
 }
 body{
 	margin:0
-	position: fixed;
-	overflow: hidden;
-	width: 100vw;
-	height: 100vh;
 }
 a{
 	text-decoration:none;
