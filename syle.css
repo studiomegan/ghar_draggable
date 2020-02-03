@@ -152,7 +152,7 @@ h1 {
 }
 
 .droppable-1 {
-	--droppable1: 90vh;
+	--droppable1: 70vh;
 	--time1: calc(0.1s * 10);
 	top: var(--droppable1);
 	animation: slideInFromTop var(--time1) ease-in, var(--time1) bounce 0.5s linear;
@@ -229,7 +229,7 @@ h1 {
 }
 
 .droppable-7 {
-	--droppable1: 90vh;
+	--droppable1: 50vh;
 	top: var(--droppable1);
 	--time1: calc(0.1s * 9);
 	left: 5vw;
