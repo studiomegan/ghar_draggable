@@ -152,53 +152,114 @@ h1 {
 }
 
 .droppable-1 {
-	top: 50vh;
-	animation: slideInFromTop 0.5s ease-in;
+	--droppable1: 90vh;
+	--time1: calc(0.1s * 10);
+	top: var(--droppable1);
+	animation: slideInFromTop var(--time1) ease-in, var(--time1) bounce 0.5s linear;
+}
+
+.droppable-1 h1 {
+	transform:rotate(10deg);
+	animation: fall 0.5s ease-in;
 }
 
 .droppable-2 {
-	top: 40vh;
+	--droppable1: 60vh;
+	--time1: calc(0.1s * 5);
+	top: var(--droppable1);
 	left: 30vw;
-	/*animation: slideInFromTop 0.5s ease-in 0.5s, 0.2s bounce 0.5s linear, 1s swing 0.5s;*/
+	animation: slideInFromTop var(--time1) ease-in, var(--time1) bounce 0.5s linear;
+}
+
+.droppable-2 h1 {
+	transform:rotate(10deg);
+	animation: fall 0.5s ease-in;
 }
 
 .droppable-3 {
-	top: 30vh;
+	--droppable1: 80vh;
+	top: var(--droppable1);
+	--time1: calc(0.1s * 8);
 	left: 0vw;
+	animation: slideInFromTop var(--time1) ease-in, var(--time1) bounce 0.5s linear;
+}
+
+.droppable-3 h1 {
+	transform:rotate(10deg);
+	animation: fall 0.5s ease-in;
 }
 
 .droppable-4 {
-	top: 20vh;
+	--droppable1: 20vh;
+	--time1: calc(0.1s * 3);
+	top: var(--droppable1);
 	left: 25vw;
+	animation: slideInFromTop var(--time1) ease-in, var(--time1) bounce 0.5s linear;
+}
+
+.droppable-4 h1 {
+	transform:rotate(10deg);
+	animation: fall 0.5s ease-in;
 }
 
 .droppable-5 {
-	top: 10vh;
+	--droppable1: 70vh;
+	top: var(--droppable1);
+	--time1: calc(0.1s * 8);
 	left: 15vw;
+	animation: slideInFromTop var(--time1) ease-in, var(--time1) bounce 0.5s linear;
+}
+
+.droppable-5 h1 {
+	transform:rotate(10deg);
+	animation: fall 0.5s ease-in;
 }
 
 .droppable-6 {
-	top: 60vh;
+	--droppable1: 60vh;
+	top: var(--droppable1);
+	--time1: calc(0.1s * 5);
 	left: 17vw;
+	animation: slideInFromTop var(--time1) ease-in, var(--time1) bounce 0.5s linear;
+}
+
+.droppable-6 h1 {
+	transform:rotate(10deg);
+	animation: fall 0.5s ease-in;
 }
 
 .droppable-7 {
-	top: 70vh;
+	--droppable1: 90vh;
+	top: var(--droppable1);
+	--time1: calc(0.1s * 9);
 	left: 5vw;
+	animation: slideInFromTop var(--time1) ease-in, var(--time1) bounce 0.5s linear;
+}
+
+.droppable-7 h1 {
+	transform:rotate(10deg);
+	animation: fall 0.5s ease-in;
 }
 
 .droppable-8 {
-	top: 60vh;
+	--droppable1: 60vh;
+	top: var(--droppable1);
+	--time1: calc(0.1s * 7);
+	animation: slideInFromTop calc(0.1s * 7) ease-in, 0.3s bounce 0.5s linear;
+}
+
+.droppable-8 h1 {
+	transform:rotate(10deg);
+	animation: fall 0.5s ease-in;
 }
 
 /* ANIMATION */
-
 @keyframes slideInFromTop {
-    from {
+    0% {
         top: -10vh;
     }
-    to {
-    	top: 50vh;
+    100% {
+    	top: var(--droppable1);
     }
 }
 
