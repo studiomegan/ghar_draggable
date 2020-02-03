@@ -3,6 +3,7 @@ const containers = document.querySelectorAll('.wrapper');
 const droppable = new Draggable.Droppable(containers, { //register dropzones as containers
   draggable: '.draggable',
   dropzone: '.dropzone',
+  delay: 10,  
   mirror: {
     constrainDimensions: true, //prevent element from shrinking while being dragged
   },
