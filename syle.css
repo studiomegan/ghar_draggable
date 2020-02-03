@@ -199,8 +199,8 @@ h1 {
 }
 
 .droppable-4 {
-	--droppable1: 20vh;
-	--time1: calc(0.1s * 3);
+	--droppable1: 70vh;
+	--time1: calc(0.1s * 7);
 	top: var(--droppable1);
 	left: 25vw;
 }
