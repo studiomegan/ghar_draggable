@@ -44,7 +44,6 @@ section {
 	padding: 0 5vw 0 5vw;
 	position: relative;
 	height: calc(100vh - 75px);
-	border-bottom: 10px var(--zwart) solid;
 }
 
 h1 {
@@ -160,13 +159,12 @@ h1 {
 	grid-row-end: 8;
 }
 
-
-
-
 .dropzone.occupied {
 	position: absolute;
 	z-index: 10;
-	animation: slideInFromTop var(--time1) ease-in, var(--time1);
+	transition: 1s;
+	margin-top: -100vh;
+	/*animation: slideInFromTop var(--time1) ease-in, var(--time1);*/
 }
 
 .dropzone.occupied h1 {
@@ -177,6 +175,151 @@ h1 {
 	color: var(--beige);
 }
 
+.droppable-1 {
+	--time1: calc(0.1s * 10);
+}
+
+.droppable-1 h1 {
+	--time2: 0.5s;
+}
+
+.droppable-2 {
+	--time1: calc(0.1s * 5);
+}
+
+.droppable-2 h1 {
+	--time2: 0.7s;
+}
+
+.droppable-3 {
+	--time1: calc(0.1s * 8);
+}
+
+.droppable-3 h1 {
+	--time2: 0.5s;
+}
+
+.droppable-4 {
+	--time1: calc(0.1s * 7);
+}
+
+.droppable-4 h1 {
+
+	--time2: 0.5s;
+}
+
+.droppable-5 {
+	--time1: calc(0.1s * 8);
+}
+
+.droppable-5 h1 {
+
+	--time2: 0.5s;
+}
+
+.droppable-6 {
+	--time1: calc(0.1s * 5);
+
+}
+
+.droppable-6 h1 {
+	--time2: 0.5s;
+}
+
+.droppable-7 {
+	--time1: calc(0.1s * 9);
+}
+
+.droppable-7 h1 {
+	--time2: 0.5s;
+}
+
+.droppable-8 {
+	--time1: calc(0.1s * 7);
+}
+
+.droppable-8 h1 {
+	--time2: 0.5s;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        top: -10vh;
+    }
+    100% {
+    	top: var(--droppable1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+    	transform: rotate(calc(var(--rotater) - 50deg));
+    }
+    100% {
+    	transform: rotate(var(--rotater));
+    }
+}
+
+/*
+DROPDOWN
+*/
+
+#content {
+	margin: 20px 5%;
+}
+#content h3 {
+	color: #f6eace;
+	font-family: Akkurat, 'Open Sans', sans-serif; 
+	font-size: 28px;
+	margin: 0;
+}
+#content h4 {
+	color: #f6eace;
+	font-family: Akkurat, 'Open Sans', sans-serif; 
+	font-size: 21px;
+	margin: 20px 0 0 0;
+}
+#content  p {
+	color: #f6eace; 
+	font-family: Akkurat, 'Open Sans', sans-serif; 
+	font-weight: 600 !important; 
+	margin: 5px 0 50px 0;
+	line-height: 1.5;
+}
+#colofon {
+	position: absolute;
+	color: #f6eace;
+	font-family: Akkurat, 'Open Sans', sans-serif;
+	height: 100%;
+	padding: 50px 5% 100px 5%;
+	background-color: #f76014;
+}
+.colofon {
+	font-size: 12px;
+}
+#content img {
+	margin-bottom: 40px;
+}
+#content img.left {
+	float: left;
+	width: 80%;
+}
+#content img.right {
+	float: right;
+	width: 80%;
+}
+#content img.middle {
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+}
+
+/*
+PLUSBUTTON
+*/
 button#plusbutton {
 	border: 3px solid #f76014;
 	background-color: #f6eace;
@@ -215,130 +358,3 @@ button#plusbutton {
     margin: auto 8px;
     height: 3px;
 }
-
-/*
-.droppable-1 {
-	--droppable1: 70vh;
-	--time1: calc(0.1s * 10);
-	top: var(--droppable1);
-}
-
-.droppable-1 h1 {
-	--rotater: 5deg;
-	transform:rotate(var(--rotater));
-	--time2: 0.5s;
-}
-
-.droppable-2 {
-	--droppable1: 60vh;
-	--time1: calc(0.1s * 5);
-	top: var(--droppable1);
-	left: 30vw;
-}
-
-.droppable-2 h1 {
-	--rotater: 10deg;
-	transform:rotate(var(--rotater));
-	--time2: 0.7s;
-}
-
-.droppable-3 {
-	--droppable1: 80vh;
-	top: var(--droppable1);
-	--time1: calc(0.1s * 8);
-	left: 0vw;
-}
-
-.droppable-3 h1 {
-	--rotater: 15deg;
-	transform:rotate(var(--rotater));
-	--time2: 0.5s;
-}
-
-.droppable-4 {
-	--droppable1: 70vh;
-	--time1: calc(0.1s * 7);
-	top: var(--droppable1);
-	left: 25vw;
-}
-
-.droppable-4 h1 {
-	--rotater: 20deg;
-	transform:rotate(var(--rotater));
-	--time2: 0.5s;
-}
-
-.droppable-5 {
-	--droppable1: 70vh;
-	top: var(--droppable1);
-	--time1: calc(0.1s * 8);
-	left: 15vw;
-}
-
-.droppable-5 h1 {
-	--rotater: 10deg;
-	transform:rotate(var(--rotater));
-	--time2: 0.5s;
-}
-
-.droppable-6 {
-	--droppable1: 60vh;
-	top: var(--droppable1);
-	--time1: calc(0.1s * 5);
-	left: 17vw;
-}
-
-.droppable-6 h1 {
-	--rotater: -5deg;
-	transform:rotate(var(--rotater));
-	--time2: 0.5s;
-}
-
-.droppable-7 {
-	--droppable1: 50vh;
-	top: var(--droppable1);
-	--time1: calc(0.1s * 9);
-	left: 5vw;
-}
-
-.droppable-7 h1 {
-	--rotater: -15deg;
-	transform:rotate(var(--rotater));
-	--time2: 0.5s;
-}
-
-.droppable-8 {
-	--droppable1: 60vh;
-	top: var(--droppable1);
-	--time1: calc(0.1s * 7);
-}
-
-.droppable-8 h1 {
-	--rotater: -10deg;
-	transform:rotate(var(--rotater));
-	--time2: 0.5s;
-}
-
-/* ANIMATION 
-@keyframes slideInFromTop {
-    0% {
-        top: -10vh;
-    }
-    100% {
-    	top: var(--droppable1);
-    }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-    	transform: rotate(calc(var(--rotater) - 50deg));
-    }
-    100% {
-    	transform: rotate(var(--rotater));
-    }
-}
-
-*/
