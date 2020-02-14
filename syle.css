@@ -43,7 +43,7 @@ section {
 	margin: 0 5% 0 5%;
 	background-color: var(--oranje);
 	position: relative;
-	height: calc(100vh - 50px);
+	height: calc(100vh - 75px);
 }
 
 h1 {
@@ -81,7 +81,7 @@ h1 {
 
 .wrapper.dropzones{
     grid-template-columns: repeat(10, 9%);
-    grid-template-rows: repeat(8, 12.5%);
+    grid-template-rows: repeat(8, 11vh);
     grid-column-gap: 1%;
     height: 100%;
     width: 45vw;
