@@ -99,12 +99,9 @@ h1 {
 
 .wrapper.dropzones .dropzone {
 	background-color: var(--beige);
-	display: table;
 }
 
 .wrapper.dropzones .dropzone .draggable {
-	display: table-cell;
-	vertical-align: middle;
 }
 
 .dropzone-1 {
