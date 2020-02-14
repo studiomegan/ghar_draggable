@@ -163,7 +163,7 @@ h1 {
 	position: absolute;
 	z-index: 10;
 	transition: 1s;
-	margin-top: -100vh;
+	margin-top: -10vh;
 	/*animation: slideInFromTop var(--time1) ease-in, var(--time1);*/
 }
 
