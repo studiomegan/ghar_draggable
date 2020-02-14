@@ -62,13 +62,25 @@ function complete() {
         $(this).css('transform', 'rotate(' + a + 'deg)');
     });
 });*/
+/*
 
-jQuery(function($) {
-    // changed .hover to .each
-    $('.dropzone.occupied').each(function() {
-        var b = Math.round(Math.random() * 80 );
-        var c = Math.round(Math.random() * 30);
-        $(this).css('bottom', b + 'vh');
-        $(this).css('left', c + 'vw');
-    });
+*/
+
+
+jQuery(".hamburger").click(function(){
+    jQuery(".dropdown-content").slideToggle();
 });
+
+// HAMBURGER EN DROPDOWN
+var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+var hamburgers = document.querySelectorAll(".hamburger");
+if (hamburgers.length > 0) {
+  forEach(hamburgers, function(hamburger) {
+    hamburger.addEventListener("click", function buttonnn() {
+      this.classList.toggle("is-active");
+    }, false);
+  });
+}
+function buttonnn() {
+  this.classList.toggle("is-active");
+}
