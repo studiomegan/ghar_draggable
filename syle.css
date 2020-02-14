@@ -43,7 +43,7 @@ section {
 	margin: 0 5% 0 5%;
 	background-color: var(--oranje);
 	position: relative;
-	height: calc(100vh - 44px);
+	height: calc(100vh - 50px);
 }
 
 h1 {
