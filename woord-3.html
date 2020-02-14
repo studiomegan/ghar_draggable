@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" data-scroll-lock="false">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Droppable | Unique dropzone | Draggable JS Examples</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320 VOORKOM ZOOM OP MOBILE-->
+<link rel="icon" type="image/png" sizes="16x16" href="https://shopify.github.io/draggable/assets/img/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://shopify.github.io/draggable/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://shopify.github.io/draggable/assets/img/favicons/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://shopify.github.io/draggable/assets/img/favicons/apple-touch-icon.png">
+
+<link href="syle.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.7/lib/draggable.bundle.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script> 
+    $( document ).ready(function() {
+      $('.wrapper.dropzones').css( "grid-template-rows", "repeat(6, 10vh)" );
+    });
+</script>
+</head>
+    
+<body>
+    <section>
+        <div class="wrapper droppables">
+            <div class="dropzone occupied droppable-1" data-dropzone="1">
+                <div class="draggable">
+                    <h1>H</h1>
+                </div>
+            </div>
+            <div class="dropzone occupied droppable-2" data-dropzone="2">
+                <div class="draggable">
+                    <h1>A</h1>
+                </div>
+            </div>
+            <div class="dropzone occupied droppable-3" data-dropzone="3">
+                <div class="draggable">
+                    <h1>M</h1>
+                </div>
+            </div>
+            <div class="dropzone occupied droppable-4" data-dropzone="4">
+                <div class="draggable">
+                    <h1>M</h1>
+                </div>
+            </div>
+            <div class="dropzone occupied droppable-5" data-dropzone="5">
+                <div class="draggable">
+                    <h1>A</h1>
+                </div>
+            </div>
+            <div class="dropzone occupied droppable-6" data-dropzone="6">
+                <div class="draggable">
+                    <h1>M</h1>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper dropzones">
+                <div class="dropzone dropzone-1" data-dropzone="1"></div>
+                <div class="dropzone dropzone-2" data-dropzone="2"></div>
+                <div class="dropzone dropzone-3" data-dropzone="3"></div>
+                <div class="dropzone dropzone-4" data-dropzone="4"></div>
+                <div class="dropzone dropzone-5" data-dropzone="5"></div>
+                <div class="dropzone dropzone-6" data-dropzone="6"></div>
+        </div>
+    </section>
+
+    <button id="plusbutton" class="plus" type="button" onclick="window.location.href='end.html'"></button>
+    <script type="text/javascript"src="js/js.js"></script>
+
+</body>
+
+</html>
