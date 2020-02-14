@@ -14,9 +14,11 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://shopify.github.io/draggable/assets/img/favicons/apple-touch-icon.png">
 
 <link href="syle.css" rel="stylesheet">
+<link href="hamburger.css" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.7/lib/draggable.bundle.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
 <script type="text/javascript">
 $( document ).ready(function() {
     jQuery(function($) {
@@ -28,17 +30,233 @@ $( document ).ready(function() {
             $(this).css('left', c + 'vw');
         });
     });
-    $('.wrapper.dropzones').css( "grid-template-rows", "repeat(6, 10vh)" );
-    });
 </script>
+
 </head>
+
+<div class="dropdown">
+    <button id="hamburgerbutton" class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+            <div id="content"><h3>Unlock content by listening to the stories.</h3></div>
+
+            <div id="gharfotos" class="hideme">
+                <span> 
+                    <img src="soapphotos/1.JPG" class="left">
+                    <img src="soapphotos/3.JPG" class="middle">
+                    <img src="soapphotos/5.JPG" class="right">
+                    <img src="soapphotos/8.JPG" class="left">
+                    <img src="soapphotos/9.JPG" class="middle">
+                    <img src="soapphotos/11.JPG" class="right">
+                    <img src="soapphotos/12.JPG" class="left">
+                    <img src="soapphotos/14.JPG" class="middle">
+                    <img src="soapphotos/15.JPG" class="right">
+                    <img src="soapphotos/16.JPG" class="left">
+                    <img src="soapphotos/19.JPG" class="middle">
+                    <img src="soapphotos/23.JPG" class="right">
+                    <img src="soapphotos/24.JPG" class="left">
+                    <img src="soapphotos/26.JPG" class="middle">
+                    <img src="soapphotos/27.JPG" class="right">
+                    <img src="soapphotos/28.JPG" class="left">
+                    <img src="soapphotos/29.JPG" class="middle">
+                    <img src="soapphotos/32.JPG" class="right">
+                    <img src="soapphotos/33.JPG" class="left">
+                    <img src="soapphotos/35.JPG" class="middle">
+                    <img src="soapphotos/38.JPG" class="right">
+                    <img src="soapphotos/39.JPG" class="left">
+                    <img src="soapphotos/50.JPG" class="middle">
+                </span>
+            </div>
+
+            <div id="gharinnumbers" class="hideme">
+                <h3>the oldest soap in the world dating back at least <span id="13">0</span> centuries</h3>
+
+                <h4>Ingredients (hot process) :</h4>
+                <p>olive oil , laurel, oil , water , lye</p>
+
+                <h3>Ghar soap takes <span id="7">7</span> months to ripen</h3>
+
+                <h4>Quality </h4>
+                <p>1 to 8 stars imprinted/stamped in the soap<br />
+                represent the quality of the soap <br />
+                1 star = 1 barrel of laurel oil <br />
+                8 stars = 8 barrels of laurel oil<br />
+                <span style="font-size: 28px">&#8902; &#8902; &#8902; &#8902; &#8902; &#8902; &#8902; &#8902;</p>
+
+                <h4>People</h4>
+                <p>64.000 Syrian immigrants living in NL<br />
+                10 amount of Syrian refugees contributed to the Ghar research project by Nienke Galjaard</p>
+
+                <h4>3 Syrian refugees were interviewed for this publication</h4>
+                <p>1 50 year old <br />
+                1 29 year old<br />
+                1 x? year old</p>
+
+                <h4>The war</h4>
+                <p> The civil war in Syria started in 2011 <br />
+                The European refugee crisis started in 2013</p>
+
+                <h4>There used to be around 300 soap factories in Syria of which around 50 were in Aleppo. <br />
+                by 2018 around 90% of these factories were destroyed</h4>
+            </div>
+
+            <div id="textblok1" class="hideme">
+                
+                <h3>“When I entered the bathroom after him, it smelled as if Ghar trees grew inside”</h3>
+                <p>
+                    When I smell Ghar soap now,
+                    its scent brings to mind moments from my childhood.
+                    The sweet fragrance of the soap echos the joy and peace of that time.
+                </p>
+                <p>
+                    Whenever my father used the bathroom, he would always take a whole bar of Ghar soap with him.
+                </p>
+                <p>
+                    Ghar soap is almost twice as big as the average soap here.
+                </p>
+                <p>
+                    He would use a completely new bar of soap because he didn't like to use a used one.
+                    He always wanted a new bar of soap for himself.
+                    If there was soap for guests who used the bathroom, he would never use it.
+                    He found it disgusting.
+                    That's why he always used a new bar of soap.
+                    Until now it remains a mystery for me how he could manage to use up the whole soap.
+                    Anyone can have a wash ten times without using up the soap. Somehow, he managed.
+                    When I entered the bathroom after him, it smelled as if Ghar trees grew inside
+                    When someone uses the soap before you
+                    you smell nature and Ghar vapour. 
+                    The smell is wonderful to have in the bathroom.
+                </p>
+                <p>
+                    
+                    In Syria we put a lot of attention and care in our bathrooms.
+                    Most people have dark blue porcelain tiles on the walls.
+                    The lower part of the wall is blue, the middle has a line that's decorated with Arabic calligraphy
+                    the upper part has lighter porcelain tiles.
+                    When inside, it's wonderful to be able to enjoy the beauty of the design of a bathroom.
+                </p>
+                <p>
+                    Our bathroom was big and had a shower in the middle.
+                    It was bigger than the one I have at the moment.
+                    I always asked my mother how my father could use a whole bar of soap in one bathing session.
+                    Even if he would be eating it, it couldn't be all be gone after just one bath!
+                    When I grew up, thanks to capitalism, I thought Dove soap and other brands were better because of the advertisements on TV.
+                    The soap looked rich, foamy and luxurious.
+                    But when I became a bit older and wiser ...
+                    ... I realised that Ghar soap was natural and better than the commercial brands.
+                    And that it had just been the influence of capitalism on everyone.
+                </p>
+                <p>
+                    My name is Mohammad I’m from Damascus, Syria.
+                    I currently live in Rotterdam.
+                    I'm 29 years old.
+                </p> 
+                
+
+            </div>
+            <div id="textblok2" class="hideme">
+                <h3>
+                “I saw how the workers were stamping the soap, and wanted to try it myself.”</h3>
+                <p>
+                    Whenever I see the soap here it triggers wonderful memories from when I was a child
+                    and my father would take me to our factory.
+                    herinnering verleden tijd
+                    Going with my father to the factory where the soap was made,
+                    I saw how the workers were stamping the soap, and wanted to try it myself.
+                    That was a memorable experience!
+                    I used to invite my schoolmates to come to our factory to see how the soap was produced.
+                    My schoolmates could see how workers would process it, cut it, and stamp it.
+                    So they would see clearly how much effort it took to make the soap.</p>
+                <p>
+                    Ghar soap is not manufactured by using machines, but made manually.
+                    To produce the soap you need a large vat.
+                    The workers begin by adding natural olive oil.
+                    As soon as the oil starts boiling, natural materials are added to make it more solid.
+                    Once the soap has boiled, they pour it out and spread it over the floor of the factory.
+                    It needs to cool down and stay in place until it becomes completely solid.
+                    Using long knives, they cut the soap into bars that are left to dry.
+                    Afterwards the workers collect the bars and pile them up like small houses.
+                    The last step used to be to wrap them for export to the places where the soap was to be sold.</p>
+                <p>
+                    I’m proud of this Syrian Aleppo product.
+                    And how my homeland is a pioneer in its production.
+                    The unique fragrance reminds me of my father.
+                    (God bless him and our factory).</p>
+                <p>
+                    Kadah factory was a very well-known producer of Ghar soap.
+                    It covered 2000 square meters and consisted of four storeys.
+                    Up to 2500 tons of Ghar soap was produced each year.
+                    We had 70 employees.
+                    My father used to export to the United States, France, Canada, Japan and China.
+                    Soon after our brand became popular and many people had become aware of it,
+                    the war broke out and our factory stopped producing soap.</p>
+                <p>
+                    We pray that war will come to an end.
+                    Then we can rebuild the factory and produce our soap again.</p>
+                <p>
+                    My name is Ghadeer Kadah from Syria, Aleppo.
+                    The most popular city for producing Ghar soap.
+                    I have been in the Netherlands for almost one year.
+                </p>
+            </div>
+            <div id="textblok3" class="hideme">
+                <h3>
+                    “Whenever I smell Ghar soap, it brings back memories of my wedding day.”
+                </h3>
+                <p>
+                    Ghar soap is my friend for life.
+                    Whenever I smell Ghar soap it brings back memories of my wedding day.
+                </p>
+                <p>
+                    My friends teased me.
+                    As I went to bathe in the hammam, they melted Ghar soap in some water.
+                    When I asked the hammam staff to hand me my towel, my friends threw the melted soap at me.
+                    Once I had finished bathing, we went outside.
+                </p>
+                <p>
+                    Our tradition is that the family of the groom
+                    orders food and we eat together after the groom has bathed.
+                    Once we finish eating and drinking our tea
+                    we smoke the water pipe.
+                    This all takes place in the outdoor area of the hammam.
+                    Inside is for bathing while its outdoor area is for drinking tea, eating, singing and having a feast.
+                    Sometimes people will invite a singer
+                    with a lovely voice, to perform for the groom.
+                    These songs are a farewell to being an unmarried man.
+                </p>
+                <p>
+                    Later on we left the hammam and held a small party at our home...
+                </p>
+                <p>
+                    I’m 50 years old.
+                    Still now, this scent takes me back to my youth.
+                    To the sweet days when I was young.
+                    I wish that those days would return (to us).
+                </p>
+                <p>
+                    My name is Mohammed.
+                    I came to the Netherlands with my family.
+                    I've been here since July 22nd, 2017.
+                    I live in Rotterdam, and feel happy to be here.
+                </p>
+            </div>
+            <div id="lastdiv" class="hideme">
+                <h3>
+                    ... people have become acquainted with Mohammad, Ghadeer and Mohammed.
+                </h3>
+            </div>
+    </div><!-- dropdown-content -->
+</div><!-- dropdown -->
     
 <body>
     <section>
         <div class="wrapper droppables">
             <div class="dropzone occupied droppable-1" data-dropzone="1">
                 <div class="draggable">
-                    <h1>H</h1>
+                    <h1>B</h1>
                 </div>
             </div>
             <div class="dropzone occupied droppable-2" data-dropzone="2">
@@ -48,20 +266,30 @@ $( document ).ready(function() {
             </div>
             <div class="dropzone occupied droppable-3" data-dropzone="3">
                 <div class="draggable">
-                    <h1>M</h1>
+                    <h1>T</h1>
                 </div>
             </div>
             <div class="dropzone occupied droppable-4" data-dropzone="4">
                 <div class="draggable">
-                    <h1>M</h1>
+                    <h1>H</h1>
                 </div>
             </div>
             <div class="dropzone occupied droppable-5" data-dropzone="5">
                 <div class="draggable">
-                    <h1>A</h1>
+                    <h1>R</h1>
                 </div>
             </div>
             <div class="dropzone occupied droppable-6" data-dropzone="6">
+                <div class="draggable">
+                    <h1>O</h1>
+                </div>
+            </div>
+            <div class="dropzone occupied droppable-7" data-dropzone="7">
+                <div class="draggable">
+                    <h1>O</h1>
+                </div>
+            </div>
+            <div class="dropzone occupied droppable-8" data-dropzone="8">
                 <div class="draggable">
                     <h1>M</h1>
                 </div>
@@ -74,12 +302,13 @@ $( document ).ready(function() {
                 <div class="dropzone dropzone-4" data-dropzone="4"></div>
                 <div class="dropzone dropzone-5" data-dropzone="5"></div>
                 <div class="dropzone dropzone-6" data-dropzone="6"></div>
+                <div class="dropzone dropzone-7" data-dropzone="7"></div>
+                <div class="dropzone dropzone-8" data-dropzone="8"></div>
         </div>
     </section>
 
-    <button id="plusbutton" class="plus" type="button" onclick="window.location.href='end.html'"></button>
+    <button id="plusbutton" class="plus" type="button" onclick="window.location.href='woord-2.html'"></button>
     <script type="text/javascript"src="js/js.js"></script>
-
 </body>
 
 </html>
